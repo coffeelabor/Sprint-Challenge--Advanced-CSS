@@ -134,7 +134,7 @@ html {
 }
 html,
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #5e6164;
 }
 h1,
@@ -142,7 +142,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Russo One', sans-serif;
+  font-family: "Russo One", sans-serif;
   color: #23293b;
 }
 h2 {
@@ -189,7 +189,7 @@ p {
   color: #454a59;
 }
 footer {
-  color: #22283B;
+  color: #22283b;
   background: #f4f4f4;
   padding: 20px 0;
   border: 1px double #e0e0e0;
@@ -200,6 +200,7 @@ footer {
 }
 .home img {
   border-radius: 10px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -217,6 +218,17 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+  .home .space-images .blast {
+    width: 100%;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -267,4 +279,49 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk {
+    margin-top: 5px;
+    padding: 10px 2em 5px 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .home .walk h2,
+  .home .walk h3,
+  .home .walk h4 {
+    display: flex;
+    align-self: flex-start;
+  }
+  .home .walk .walk-img {
+    width: 100%;
+    order: 1;
+  }
+  .home .walk .walk-text {
+    width: 100%;
+    order: 2;
+    padding-left: 1em;
+  }
+  .home .walk .btn {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #22283a;
+    color: white;
+    font-size: 1.8rem;
+  }
+  .home .walk .btn:hover {
+    background-color: white;
+    color: #22283a;
+    border: 1px solid #22283a;
+  }
+  .home .walk p {
+    margin-bottom: 5px;
+  }
 }
